@@ -10,6 +10,7 @@ describe('PXR tech enabled law firm  - a lawtech company', function() {
         cy.contains('Imprint').click()
         cy.go(-2)           //cy.go('back')
         cy.wait(4000)
+        cy.log('End of test')
     })
 
     it('test02: PXR Expertise', ()=> {
@@ -24,7 +25,7 @@ describe('PXR tech enabled law firm  - a lawtech company', function() {
         cy.log('Our Services')
         cy.contains('Corporate & Transactions Litigation Taxes IP/IT & Data Protection Employment & Executive Compensation Legal Tech').should('be.visible')
         cy.wait(4000)
-
+        cy.log('End of test')
     })
 
     it('test03: PXR team', ()=> {
@@ -39,7 +40,7 @@ describe('PXR tech enabled law firm  - a lawtech company', function() {
         cy.contains('Janina').should('be.visible')
         cy.contains('Mirco').should('be.visible')
         cy.wait(4000)
-
+        cy.log('End of test')
     })
 
     it('test04: Insights', ()=> {
@@ -51,7 +52,7 @@ describe('PXR tech enabled law firm  - a lawtech company', function() {
         cy.get(':nth-child(1) > a.block > .text-style-700').click()
         cy.contains('PXR has advised the Berlin-based startup Cosuno')
         cy.wait(4000)
-
+        cy.log('End of test')
     })
 
     it('test05: PXR Contact', ()=> {
@@ -64,13 +65,13 @@ describe('PXR tech enabled law firm  - a lawtech company', function() {
         cy.log('PXR contact emailID')
         cy.contains('info@pxr-legal.com')
         cy.wait(4000)
-              
+        cy.log('End of test')             
     })
 
     it('test06: PXR Social link - LinkedIn', ()=> {
         cy.visit('https://pxr-legal.com/')
         cy.get('.cluster > .block').click()
         // cy.wait(2000)
-
+        cy.log('End of test')
     })
 })

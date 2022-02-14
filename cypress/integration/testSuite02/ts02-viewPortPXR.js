@@ -39,6 +39,7 @@ describe('view ports: size & orientation of the PXR web pages', function() {
         cy.contains('Janina').should('be.visible')
         cy.contains('Mirco').should('be.visible')
         cy.wait(4000)
+        cy.log('End of test')
     })
 
 

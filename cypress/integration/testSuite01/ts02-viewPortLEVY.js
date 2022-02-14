@@ -50,14 +50,14 @@ describe('view ports: size & orientation of the LEVY web pages', function() {
         cy.contains('THERESA VILSMAIER').should('be.visible')
         cy.contains('SCOTT ENGLAND')
         cy.wait(4000)
+        cy.log('End of test')
     })
 
     it('test06: LEVY Health Social link - LinkedIn', ()=> {
         cy.visit('https://www.levy.health/en/')
         cy.get(':nth-child(3) > a > img').click()
         cy.url().should('include','linkedin.com/company/')
-        
-        
+        cy.log('End of test')        
     })
 
 })

@@ -15,6 +15,7 @@ describe('LEVY Health tests', function() {
         cy.get('#menu-item-wpml-ls-15-de > a > .wpml-ls-native').click()
         cy.url().should('include','levy.health')
         cy.wait(4000)
+        cy.log('End of test')
     })
 
     it('test02: our science', ()=> {
@@ -27,7 +28,7 @@ describe('LEVY Health tests', function() {
         cy.contains('You receive your results and discuss them with our reproductive physicians').should('be.visible')
         cy.contains('We accompany you holistically').click()
         cy.wait(4000)
-
+        cy.log('End of test')
     })
 
     it('test03: team', ()=> {
@@ -40,7 +41,7 @@ describe('LEVY Health tests', function() {
         cy.contains('THERESA VILSMAIER').should('be.visible')
         cy.contains('SCOTT ENGLAND')
         cy.wait(4000)
-
+        cy.log('End of test')
     })
 
     it('test04: blog', ()=> {
@@ -49,7 +50,7 @@ describe('LEVY Health tests', function() {
         cy.url().should('include','levy.health/en/blog/')
         cy.contains('LEVY Blog').should('be.visible')
         cy.wait(4000)
-        
+        cy.log('End of test')       
     })
 
     it('test05: contact', ()=> {
@@ -59,7 +60,7 @@ describe('LEVY Health tests', function() {
         cy.contains('Contact Us').should('be.visible')
         cy.contains('hello@levy.health').should('be.visible')
         cy.wait(4000)
-        
+        cy.log('End of test')   
     })
 
     it('test06: login', ()=> {
@@ -72,7 +73,7 @@ describe('LEVY Health tests', function() {
         cy.contains('I agree to the Terms and Conditions and Data Privacy Policy').should('be.visible')
         cy.contains('Sign up to LEVY').should('be.visible')
         cy.wait(4000)
-        
+        cy.log('End of test')
     })
 
 
