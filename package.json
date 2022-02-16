@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reportMerge":"mochawesome-merge cypress/reports/*.json > cypress/reports/mochareports/report.json",
+    "reportGenerator": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "mochaReport": "npm run reportMerge && npm run reportGenerator"
   },
   "keywords": [],
   "author": "Manjunatha Koosalapur",
