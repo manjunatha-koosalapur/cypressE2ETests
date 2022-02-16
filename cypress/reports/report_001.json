@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-16T16:07:28.079Z",
+    "end": "2022-02-16T16:08:36.530Z",
+    "duration": 68451,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f2513a3-b088-4885-866c-8c3d1d6ca169",
+      "title": "",
+      "fullFile": "cypress/integration/testSuite01/ts02-viewPortLEVY.js",
+      "file": "cypress/integration/testSuite01/ts02-viewPortLEVY.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+          "title": "view ports: size & orientation of the LEVY web pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test01: run tests in macbook-16",
+              "fullTitle": "view ports: size & orientation of the LEVY web pages test01: run tests in macbook-16",
+              "timedOut": null,
+              "duration": 12206,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('macbook-16');\ncy.screenshot();\ncy.wait(2000);",
+              "err": {},
+              "uuid": "a57506ae-a8c5-45b5-b629-a2a90966e984",
+              "parentUUID": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test02: run tests in ipad-2",
+              "fullTitle": "view ports: size & orientation of the LEVY web pages test02: run tests in ipad-2",
+              "timedOut": null,
+              "duration": 7896,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('ipad-2');\ncy.wait(2000);",
+              "err": {},
+              "uuid": "b2867b46-d608-4884-9984-c6ac59aa6a0d",
+              "parentUUID": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test03: run tests in iphone-8",
+              "fullTitle": "view ports: size & orientation of the LEVY web pages test03: run tests in iphone-8",
+              "timedOut": null,
+              "duration": 7082,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('iphone-8');\ncy.wait(2000);",
+              "err": {},
+              "uuid": "66c5ec1e-4be3-46e6-a6e7-6b84fbb5b593",
+              "parentUUID": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test04: run tests in 1024px x 768px",
+              "fullTitle": "view ports: size & orientation of the LEVY web pages test04: run tests in 1024px x 768px",
+              "timedOut": null,
+              "duration": 8185,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1024, 768);\ncy.wait(2000);",
+              "err": {},
+              "uuid": "a0bd89f2-7fb2-42ec-b8b5-3f25544021c7",
+              "parentUUID": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test05: run tests in samsung-s10",
+              "fullTitle": "view ports: size & orientation of the LEVY web pages test05: run tests in samsung-s10",
+              "timedOut": null,
+              "duration": 17651,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('samsung-note9');\ncy.wait(2000);\ncy.get('.bar-img').click();\ncy.get('#menu-item-563 > a').click();\ncy.url().should('include', 'levy.health/en/team/');\ncy.contains('THE FOUNDERS').should('be.visible');\ncy.contains('CAROLINE MITTERDORFER').should('be.visible');\ncy.contains('SILVIA HECHER').should('be.visible');\ncy.contains('THERESA VILSMAIER').should('be.visible');\ncy.contains('SCOTT ENGLAND');\ncy.wait(4000);\ncy.log('End of test');",
+              "err": {},
+              "uuid": "ff9111b9-749c-4c9b-9e44-a7b08e1810d0",
+              "parentUUID": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test06: LEVY Health Social link - LinkedIn",
+              "fullTitle": "view ports: size & orientation of the LEVY web pages test06: LEVY Health Social link - LinkedIn",
+              "timedOut": null,
+              "duration": 12359,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.levy.health/en/');\ncy.get(':nth-child(3) > a > img').click();\ncy.url().should('include', 'linkedin.com/company/');\ncy.log('End of test');",
+              "err": {},
+              "uuid": "d25fb96e-10f0-4645-851d-1e930697a134",
+              "parentUUID": "8fd1cf99-e906-43b1-942b-628b54c8d238",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a57506ae-a8c5-45b5-b629-a2a90966e984",
+            "b2867b46-d608-4884-9984-c6ac59aa6a0d",
+            "66c5ec1e-4be3-46e6-a6e7-6b84fbb5b593",
+            "a0bd89f2-7fb2-42ec-b8b5-3f25544021c7",
+            "ff9111b9-749c-4c9b-9e44-a7b08e1810d0",
+            "d25fb96e-10f0-4645-851d-1e930697a134"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 65379,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

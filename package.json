@@ -10,6 +10,9 @@
   "author": "Manjunatha Koosalapur",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.4.1"
+    "cypress": "^9.4.1",
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
   }
 }

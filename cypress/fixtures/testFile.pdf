@@ -1,0 +1,7 @@
+Test automation by Cypress
+
+Test scenario:
+1. Go to https://the-internet.herokuapp.com/upload
+2. Select file and upload it
+3. After upload, validate that the file was successfully uploaded or not
+4. Test pass if file upload successfully

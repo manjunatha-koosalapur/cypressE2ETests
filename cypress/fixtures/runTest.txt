@@ -1,0 +1,47 @@
+CLI  - Command Line Interface 
+
+//Run test through Cypress TestRunner
+npx cypress open
+node_modules\.bin\cypress open
+
+//Run tests in headless mode (Note: all test cases will from integration folder)
+npx cypress run            
+
+//Run specific test
+npx cypress run --spec cypress\integration\testSuite02\ts01-viewPortTests.js
+
+//Run all test cases from specific folder
+npx cypress run --spec cypress\integration\testSuite02\*.js
+
+//headless tests runs in Electron browser by default
+
+//Run tests in specific browser
+npx cypress run --spec cypress\integration\testSuite02\ts01-viewPortTests.js --browser chrome --headed
+
+
+//to handle Service Unavailable in Cypress
+{failOnStatusCode: false})   refer ts02-LEVY Health.js
+
+
+//to handle Uncaught Exception in Cypress
+Add this in support > index.js file
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false
+})
+
+//to get Cypress IntelliSense or Auto Suggestions in Visual Studio Code 
+add this in jsconfig.json
+{
+    "include": [
+      "./node_modules/cypress",
+      "cypress/**/*.js"
+    ]
+}
+
+
+//npx cypress run --spec cypress\integration\testSuite02\ts02-LEVYHealth.js --browser chrome --headed
+
+//npx cypress run --spec cypress\integration\testSuite03\ts01-PXR.js --browser chrome --headed
+

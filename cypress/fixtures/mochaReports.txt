@@ -1,0 +1,16 @@
+Mochawesome is a custom reporter for use with the Javascript testing framework, mocha. 
+It runs on Node.js (>=10) and works in conjunction with mochawesome-report-generator 
+to generate a standalone HTML/CSS report to help visualize your test runs.
+
+We need to add the following dependencies/npm packages:
+1. https://www.npmjs.com/package/mochawesome
+    npm install --save-dev mochawesome
+
+2. https://www.npmjs.com/package/mochawesome-merge
+    npm install mochawesome-merge --save-dev
+
+3. https://www.npmjs.com/package/mochawesome-report-generator
+    npm install -g mochawesome-report-generator
+
+Run tests and verify mocha html reports
+npx cypress run --spec cypress\integration\testSuite01\*.js --browser chrome

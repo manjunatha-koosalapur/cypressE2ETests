@@ -1,4 +1,4 @@
-// import 'cypress-file-upload';
+import 'cypress-file-upload';
 
 Cypress.Commands.add('login', (email, password) =>{
     cy.get('.login').click()
